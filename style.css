@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 28px;
+    justify-content: space-evenly;
+    width: 272px;
+    height: 460px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-info img {
+    width: 76px;
+    border-radius: 50%;
+}
+.profile-info h4 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 0.03rem;
+    margin-top: 26px;
+}
+.profile-info p {
+    font-size: small;
+}
+.profile p:nth-child(3) {
+    color: hsl(75, 94%, 57%);
+    margin: 8px 0 24px 0;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 248px;
+    margin-top: 12px;
+}
+.links a {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 20%);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+.links a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
